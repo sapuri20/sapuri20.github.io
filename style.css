@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-attachment: fixed; 
+    color: lightgreen;
+    text-shadow: white;
+}
+
+
+.tombol{
+    background-color: #ff00fc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.tombol:hover{
+    background-color: #45a049;
+}
+.antarmuka{
+    position: fixed;
+    font-family: sans-serif;
+    background-color: lightseagreen;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+    z-index: 99;
+}
+
+.antarmuka .bagian-dalam{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.antarmuka ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.antarmuka a{
+    color: black;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.antarmuka a:hover{
+    color: black;
+    font-weight: bold;
+}
+.bagian-dalam{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.antarmuka .bagian-dalam{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.isi-menu{
+    display: none;
+    position: absolute;
+    background-color: burlywood;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.isi-menu a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.isi-menu a:hover{
+    background-color: #f1f1f1
+}
+
+.menu:hover .isi-menu {
+    display: block;
+}
+.kerangka{
+    transition: 0.3s;
+    margin: auto;
+    border-radius: 4px;
+}
+
+}
+.tampung-kerangka{
+    margin-top: 0px;
+}
+.kirana{
+    margin-top: 170px;
+}
+.slip{
+    text-align: center;
+}
+.gaya{
+    border-radius: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 5px;
+    background: white;
+    margin: 80px;
+    transition: 0.2s;
+    opacity: 90%;
+    width: 5cm;
+    height: 5cm;
+    object-fit: cover;
+    margin-top: 50px;
+
+}.tentang-kita, .tampung-kontak{
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+.tentang-kita p{
+    text-align: justify;
+}
+
+.tentang-kita, .tampung-kontak{
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+.tentang-kita p{
+    text-align: justify;
+}
+p{
+    margin-top: 20px;
+}
+
+h1:hover{
+    color: yellow;
+    letter-spacing: 5px;
+}
+
+p, h2{
+    color: black;
+}
+
+.gaya:hover{
+    transform: scale(1.2);
+    opacity: 100%;
+    box-shadow: 1px 1px 6px orange;
+}
+
+@media only screen and (max-width: 600px){
+    .antarmuka a{
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .kerangka{
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .tentang-kita{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}

@@ -1,0 +1,44 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(192, 201, 69);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+p, h2{
+    color: black;
+}
+
+th{
+    background-color: grey;
+}
+
+td{
+    background-color: yellowgreen;
+}
+
+td, th{
+    border: 1px solid rgb(255, 255, 255);
+    color: black;
+    padding: 8px;
+}
+
+td:first-child{
+    text-align: center;
+}
+
+td:hover{
+    background-color: yellow;
+}
+.atas{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.atas-tabel{
+    background-color: whitesmoke;
+}
